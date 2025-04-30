@@ -1,6 +1,6 @@
-<h1 style="text-align:center;">Sense Device Identity - Android</h1>
+<h1 align="center" style="text-align:center;">Sense Device Identity - Android</h1>
 
-<p style="text-align:center;width:100%;">
+<p align="center" style="text-align:center;width:100%;">
     <a href="https://github.com/sense-opensource/sense-device-identity-android/blob/main/LICENSE"><img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"></a> 
     <img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
     <a href="https://discord.gg/hzNHTpwt">
