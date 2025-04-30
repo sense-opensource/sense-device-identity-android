@@ -1,25 +1,20 @@
 package io.github.senseopensource
 
 import android.app.Activity
-import android.content.Context
-import android.util.Base64
 import io.github.senseopensource.core.getDetails
 import io.github.senseopensource.core.getSenseId
 import io.github.senseopensource.utils.Location
 import io.github.senseopensource.utils.PermissionManager
 import org.json.JSONObject
-import javax.crypto.Cipher
-import javax.crypto.spec.IvParameterSpec
-import javax.crypto.spec.SecretKeySpec
 
 
-class Sense private constructor(val activity: Activity) {
+class SenseOS private constructor(val activity: Activity) {
     private var initData: SenseOSConfig? = null
     companion object {
-        private var instance: Sense? = null
+        private var instance: SenseOS? = null
         fun initSDK(activity: Activity, initData: SenseOSConfig) {
             if (instance == null) {
-                instance = Sense(activity)
+                instance = SenseOS(activity)
             }
             instance?.apply {
                 this.initData = initData
@@ -31,14 +26,7 @@ class Sense private constructor(val activity: Activity) {
             }
         }
 
-        private fun saveSenseIdentifier(activity: Activity, key: String, value: String) {
-            val sharedPref = activity.getSharedPreferences("SensePrefs", Context.MODE_PRIVATE)
-            val editor = sharedPref.edit()
-            editor.putString(key, value)
-            editor.apply()
-        }
-
-        fun getSenseDetails(listener: SenseListener) {
+        fun getSenseDetails(listener: SenseOSListener) {
             val sdk = instance
             val deviceDetails = sdk?.let { getDetails(it.activity) }
             val idDetails = sdk?.let { getSenseId(it.activity) }
@@ -54,7 +42,7 @@ class Sense private constructor(val activity: Activity) {
         }
     }
 
-    interface SenseListener {
+    interface SenseOSListener {
         fun onSuccess(data: String)
         fun onFailure(message: String)
     }

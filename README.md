@@ -1,36 +1,144 @@
-# sense-device-identity-android
-<h1 align="center">Understanding User Intent : Sense</h1>
+<h1 style="text-align:center;">Sense Device Identity - Android</h1>
 
-<p align="center" width="100%">
+<p style="text-align:center;width:100%;">
 <img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"> <img width="12%" src="https://custom-icon-badges.demolab.com/github/last-commit/DenverCoder1/custom-icon-badges?logo=history&logoColor=white"> <img width="9%" src="https://custom-icon-badges.demolab.com/github/actions/workflow/status/DenverCoder1/custom-icon-badges/ci.yml?branch=main&logo=check-circle-fill&logoColor=white"> 
 </p>
 
-<h2 align="center">Welcome to Sense’s open source repository</h2>
+<h2 style="text-align:center;">Welcome to Sense's open source repository</h2>
 
-<p align="center" width="100%">  
+<p style="text-align:center;width:100%;">  
 <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Fork-orange.svg?logo=fork"> <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Star-yellow.svg?logo=star"> <img width="6.5%" src="https://custom-icon-badges.demolab.com/badge/Commit-green.svg?logo=git-commit&logoColor=fff"> 
 </p>
 
 <p style="text-align:center;"> 
   
 
-<p align="center"> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
-<p align="center"> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
+<p style="text-align:center;"> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
+<p style="text-align:center;"> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
 
 
-<p align="center"> Sense’s real time demo : https://pro.getsense.co/
+<p style="text-align:center;"> Sense’s real time demo : https://pro.getsense.co/
 
 *** Try visiting the same page in an incognito mode or switch on the VPN and 
 notice how the visitor identifier remains the same in spite of all these changes!*** 
 
-<h3 align="center">Getting started with Sense </h3>
+<h3 style="text-align:center;">Getting started with Sense </h3>
+
+
+## Sense - Android SDK
+
+Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.
+Requirements
 
 ```
-(code snippet)  
-``` 
-<h3 align="center">Run this code here : (sandbox environment to check and verify the code)</h3>
+* Use Android 5.1 (API level 21) and above.
+* Use Kotlin version 1.6.10 and above.
+* Add READ_PHONE_STATE Permission in Android Manifest for deivce information(Optional)
+```
 
-<h4 align="center">Plug and play, in just 3 steps</h3>  
+Note: If the application does not have the listed permissions, the values collected using those permissions will be ignored. To provide a valid device details, we recommend employing as much permission as possible based on your use-case.
+
+#### Step 1 - Add Dependency
+
+Add the dependency in the app level build.gradle:
+
+```
+dependencies {
+    implementation 'io.github.sense-opensource:SenseOS:0.0.1'
+}
+```
+
+#### Step 2 - Import SDK
+
+```
+import io.github.sense-opensource.SenseOS
+import io.github.sense-opensource.SenseOSConfig
+```
+
+#### Step 3 - Initialize SDK
+
+Add the following line of code to initialize it with the api key you obtained from the Sense Client panel. If you don't have a api key create new one.
+
+```
+val config = SenseOSConfig(
+    allowGeoLocation = true // true or false
+)
+SenseOS.initSDK(activity, config)
+```
+
+#### Step 4 - Get Device Details
+
+Use the below code to get the Device Details
+
+```
+Sense.getSenseDetails(this)
+```
+
+#### Step 5 - Implement Listener
+
+Set and Implement our listener to receive the Callback details
+
+```
+SenseOS.getSenseDetails(object : Sense.SenseOSListener {
+    override fun onSuccess(data: String) {
+        // success callback 
+    }
+    override fun onFailure(message: String) {
+        // failure callback
+    }
+})
+```
+
+#### Step 6 - Location Permission (Optional)
+
+````
+You have to add this permission in AndroidManifest.xml to get Device Location Information and to get Retrieve call state, Network state, Network information, Sim datas from READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE.
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+<uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+tools:ignore="ProtectedPermissions"/>
+
+````
+
+#### Sample Program
+
+Here you can find the demonstration to do the integration.
+
+```
+import io.github.sense-opensource.SenseOS
+import io.github.sense-opensource.SenseOSConfig
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val config = SenseOSConfig(
+             allowGeoLocation = true // true or false
+        )
+
+        //Initialize SDK
+        SenseOS.initSDK(this, config)
+
+        // Fetch device details
+        getSenseDetails();
+    }
+    private fun getSenseDetails() {
+        SenseOS.getSenseDetails(object : Sense.SenseOSListener {
+            override fun onSuccess(data: String) {
+                // Handle success callback
+            }
+            override fun onFailure(message: String) {
+                // Handle failure callback
+            }
+        })
+    }
+}
+```
+
+<h4 style="text-align:center;">Plug and play, in just 3 steps</h3>  
 
 1️⃣ Visit the Git hub repository for the desired function : Validate your desired repository  
 2️⃣ Download the code as a ZIP file : Host/clone the code in your local system or website  

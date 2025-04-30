@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Sense SDK"
+rootProject.name = "SenseOS SDK"
 include ':app'
 include ':sense'

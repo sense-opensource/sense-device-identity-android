@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.getsense.R
 import com.getsense.SharedViewModel
-import io.github.senseopensource.Sense
+import io.github.senseopensource.SenseOS
 import io.github.senseopensource.SenseOSConfig
 import org.json.JSONObject
 import android.content.ClipData
@@ -59,14 +59,14 @@ class HomeFragment : Fragment() {
             val config = SenseOSConfig(
                 allowGeoLocation = true
             )
-            Sense.initSDK(activity, config)
+            SenseOS.initSDK(activity, config)
             setUpUi()
         }
     }
     private fun setUpUi() {
         context?.let { ProgressDialogManager.show(it) }
 
-        Sense.getSenseDetails(object : Sense.SenseListener {
+        SenseOS.getSenseDetails(object : SenseOS.SenseOSListener {
             override fun onSuccess(data: String) {
                 val jsonObject = JSONObject(data)
                 val sense_id = jsonObject.getString("sense_id");
