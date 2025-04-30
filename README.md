@@ -1,7 +1,11 @@
 <h1 style="text-align:center;">Sense Device Identity - Android</h1>
 
 <p style="text-align:center;width:100%;">
-<img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"> <img width="12%" src="https://custom-icon-badges.demolab.com/github/last-commit/DenverCoder1/custom-icon-badges?logo=history&logoColor=white"> <img width="9%" src="https://custom-icon-badges.demolab.com/github/actions/workflow/status/DenverCoder1/custom-icon-badges/ci.yml?branch=main&logo=check-circle-fill&logoColor=white"> 
+    <a href="https://github.com/sense-opensource/sense-device-identity-android/blob/main/LICENSE"><img width="9%" src="https://custom-icon-badges.demolab.com/github/license/denvercoder1/custom-icon-badges?logo=law"></a> 
+    <img width="12.6%" src="https://badge-generator.vercel.app/api?icon=Github&label=Last%20Commit&status=May&color=6941C6"/> 
+    <a href="https://discord.gg/hzNHTpwt">
+        <img width="10%" src="https://badge-generator.vercel.app/api?icon=Discord&label=Discord&status=Live&color=6941C6"> 
+    </a>
 </p>
 
 <h2 style="text-align:center;">Welcome to Sense's open source repository</h2>
@@ -30,7 +34,7 @@ notice how the visitor identifier remains the same in spite of all these changes
 Sense is a device intelligence and identification tool. This tool collects a comprehensive set of attributes unique to a device or browser, forming an identity that will help businesses.
 Requirements
 
-```
+```kotlin
 * Use Android 5.1 (API level 21) and above.
 * Use Kotlin version 1.6.10 and above.
 * Add READ_PHONE_STATE Permission in Android Manifest for deivce information(Optional)
@@ -42,7 +46,7 @@ Note: If the application does not have the listed permissions, the values collec
 
 Add the dependency in the app level build.gradle:
 
-```
+```kotlin
 dependencies {
     implementation 'io.github.sense-opensource:SenseOS:0.0.1'
 }
@@ -50,7 +54,7 @@ dependencies {
 
 #### Step 2 - Import SDK
 
-```
+```kotlin
 import io.github.sense-opensource.SenseOS
 import io.github.sense-opensource.SenseOSConfig
 ```
@@ -59,7 +63,7 @@ import io.github.sense-opensource.SenseOSConfig
 
 Add the following line of code to initialize it with the api key you obtained from the Sense Client panel. If you don't have a api key create new one.
 
-```
+```kotlin
 val config = SenseOSConfig(
     allowGeoLocation = true // true or false
 )
@@ -70,7 +74,7 @@ SenseOS.initSDK(activity, config)
 
 Use the below code to get the Device Details
 
-```
+```kotlin
 Sense.getSenseDetails(this)
 ```
 
@@ -78,7 +82,7 @@ Sense.getSenseDetails(this)
 
 Set and Implement our listener to receive the Callback details
 
-```
+```kotlin
 SenseOS.getSenseDetails(object : SenseOS.SenseOSListener {
     override fun onSuccess(data: String) {
         // success callback 
@@ -91,7 +95,7 @@ SenseOS.getSenseDetails(object : SenseOS.SenseOSListener {
 
 #### Step 6 - Location Permission (Optional)
 
-````
+````kotlin
 You have to add this permission in AndroidManifest.xml to get Device Location Information and to get Retrieve call state, Network state, Network information, Sim datas from READ_PHONE_STATE and READ_PRIVILEGED_PHONE_STATE.
 
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -106,7 +110,7 @@ tools:ignore="ProtectedPermissions"/>
 
 Here you can find the demonstration to do the integration.
 
-```
+```kotlin
 import io.github.sense-opensource.SenseOS
 import io.github.sense-opensource.SenseOSConfig
 
@@ -160,16 +164,19 @@ Sense OS is available under the <a href="https://github.com/sense-opensource/sen
 
 #### Contributors code of conduct : 
 
-Thank you for your interest in contributing to this project! We welcome all contributions and are excited to have you join our community. Please read these <a href="https://github.com/sense-opensource/sense-device-identity-android/blob/main/code_of_conduct.md"> code of conduct </a> to ensure a smooth collaboration.
+Thank you for your interest in contributing to this project! We welcome all contributions and are excited to have you join our community. Please read these <a href="https://github.com/sense-opensource/sense-device-identity-android/blob/main/code_of_conduct.md"> Code of conduct </a> to ensure a smooth collaboration.
 
 #### Where you can get support :     
 ![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)       product@getsense.co 
 
 Public Support:
+
 For questions, bug reports, or feature requests, please use the Issues and Discussions sections on our repository. This helps the entire community benefit from shared knowledge and solutions.
 
 Community Chat:
+
 Join our Discord server (link) to connect with other developers, ask questions in real-time, and share your feedback on Sense.
 
 Interested in contributing to Sense?
+
 Please review our <a href="https://github.com/sense-opensource/sense-device-identity-android/blob/main/CONTRIBUTING.md"> Contribution Guidelines </a> to learn how to get started, submit pull requests, or run the project locally. We encourage you to read these guidelines carefully before making any contributions. Your input helps us make Sense better for everyone!
