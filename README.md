@@ -79,7 +79,7 @@ Sense.getSenseDetails(this)
 Set and Implement our listener to receive the Callback details
 
 ```
-SenseOS.getSenseDetails(object : Sense.SenseOSListener {
+SenseOS.getSenseDetails(object : SenseOS.SenseOSListener {
     override fun onSuccess(data: String) {
         // success callback 
     }
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
         getSenseDetails();
     }
     private fun getSenseDetails() {
-        SenseOS.getSenseDetails(object : Sense.SenseOSListener {
+        SenseOS.getSenseDetails(object : SenseOS.SenseOSListener {
             override fun onSuccess(data: String) {
                 // Handle success callback
             }
