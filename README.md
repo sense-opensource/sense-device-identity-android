@@ -8,20 +8,20 @@
     </a>
 </p>
 
-<h2 style="text-align:center;">Welcome to Sense's open source repository</h2>
+<h2 align="center" style="text-align:center;">Welcome to Sense's open source repository</h2>
 
-<p style="text-align:center;width:100%;">  
+<p align="center" style="text-align:center;width:100%;">  
 <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Fork-orange.svg?logo=fork"> <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Star-yellow.svg?logo=star"> <img width="6.5%" src="https://custom-icon-badges.demolab.com/badge/Commit-green.svg?logo=git-commit&logoColor=fff"> 
 </p>
 
 <p style="text-align:center;"> 
   
 
-<p style="text-align:center;"> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
+<p align="center" style="text-align:center;"> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>                           
 <p style="text-align:center;"> This tracking method works even in the browser's incognito mode and is not cleared by flushing the cache, closing the browser or restarting the operating system, using a VPN or installing AdBlockers. Sense is available as SenseOS for every open source requirement and is different from Sense PRO, our extremely accurate and detailed product.</p>
 
 
-<p style="text-align:center;"> Sense’s real time demo : https://pro.getsense.co/
+<p align="center" style="text-align:center;"> Sense’s real time demo : https://pro.getsense.co/
 
 *** Try visiting the same page in an incognito mode or switch on the VPN and 
 notice how the visitor identifier remains the same in spite of all these changes!*** 
