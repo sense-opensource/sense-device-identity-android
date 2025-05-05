@@ -16,19 +16,19 @@
   
  ### 🖱️ User Activity
 
-![IP Address](https://img.shields.io/badge/Keystroke-blue)
-![Location](https://img.shields.io/badge/Scroll_Metrics-green)
-![Screen Resolution](https://img.shields.io/badge/Touch_Metrics-orange)
-![Connection](https://img.shields.io/badge/Orientation-purple)
-![Sense ID](https://img.shields.io/badge/Keystroke-blue)
-![Media](https://img.shields.io/badge/Scroll_Metrics-green)
-![Call Status](https://img.shields.io/badge/Touch_Metrics-orange)
-![Location IP Address](https://img.shields.io/badge/Orientation-purple)
-![Memory Information](https://img.shields.io/badge/Keystroke-blue)
-![Proximity Sensor Data](https://img.shields.io/badge/Scroll_Metrics-green)
-![System Storage](https://img.shields.io/badge/Touch_Metrics-orange)
-![Battery Informations](https://img.shields.io/badge/Orientation-purple)
-![Device Informations](https://img.shields.io/badge/Scroll_Metrics-green)
+![IP Address](https://img.shields.io/badge/IP Address-blue)
+![Location](https://img.shields.io/badge/Location-green)
+![Screen Resolution](https://img.shields.io/badge/Screen Resolution-orange)
+![Connection](https://img.shields.io/badge/Connection-purple)
+![Sense ID](https://img.shields.io/badge/Sense ID-blue)
+![Media](https://img.shields.io/badge/Media-green)
+![Call Status](https://img.shields.io/badge/Call Status-orange)
+![Location IP Address](https://img.shields.io/badge/Location IP Address-purple)
+![Memory Information](https://img.shields.io/badge/Memory Information-blue)
+![Proximity Sensor Data](https://img.shields.io/badge/Proximity Sensor Data-green)
+![System Storage](https://img.shields.io/badge/System Storage-orange)
+![Battery Informations](https://img.shields.io/badge/Battery Informations-purple)
+![Device Informations](https://img.shields.io/badge/Device Informations-green)
 
 <p> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>
 
