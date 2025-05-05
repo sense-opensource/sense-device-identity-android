@@ -20,7 +20,7 @@
 ![Location](https://img.shields.io/badge/Location-green)
 ![Screen Resolution](https://img.shields.io/badge/Screen_Resolution-orange)
 ![Connection](https://img.shields.io/badge/Connection-purple)
-![Sense ID](https://img.shields.io/badge/Sense ID-blue)
+![Sense ID](https://img.shields.io/badge/Sense_ID-blue)
 ![Media](https://img.shields.io/badge/Media-green)
 ![Call Status](https://img.shields.io/badge/Call_Status-orange)
 ![Location IP Address](https://img.shields.io/badge/Location_IP_Address-purple)
