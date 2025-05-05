@@ -16,19 +16,19 @@
   
  ### 🖱️ User Activity
 
-![IP Address](https://img.shields.io/badge/IP Address-blue)
+![IP Address](https://img.shields.io/badge/IP_Address-blue)
 ![Location](https://img.shields.io/badge/Location-green)
-![Screen Resolution](https://img.shields.io/badge/Screen Resolution-orange)
+![Screen Resolution](https://img.shields.io/badge/Screen_Resolution-orange)
 ![Connection](https://img.shields.io/badge/Connection-purple)
 ![Sense ID](https://img.shields.io/badge/Sense ID-blue)
 ![Media](https://img.shields.io/badge/Media-green)
-![Call Status](https://img.shields.io/badge/Call Status-orange)
-![Location IP Address](https://img.shields.io/badge/Location IP Address-purple)
-![Memory Information](https://img.shields.io/badge/Memory Information-blue)
-![Proximity Sensor Data](https://img.shields.io/badge/Proximity Sensor Data-green)
-![System Storage](https://img.shields.io/badge/System Storage-orange)
-![Battery Informations](https://img.shields.io/badge/Battery Informations-purple)
-![Device Informations](https://img.shields.io/badge/Device Informations-green)
+![Call Status](https://img.shields.io/badge/Call_Status-orange)
+![Location IP Address](https://img.shields.io/badge/Location_IP_Address-purple)
+![Memory Information](https://img.shields.io/badge/Memory_Information-blue)
+![Proximity Sensor Data](https://img.shields.io/badge/Proximity_Sensor_Data-green)
+![System Storage](https://img.shields.io/badge/System_Storage-orange)
+![Battery Informations](https://img.shields.io/badge/Battery_Informations-purple)
+![Device Informations](https://img.shields.io/badge/Device_Informations-green)
 
 <p> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>
 
