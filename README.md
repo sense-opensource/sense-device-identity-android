@@ -14,6 +14,21 @@
 <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Fork-orange.svg?logo=fork"> <img width="4.5%" src="https://custom-icon-badges.demolab.com/badge/Star-yellow.svg?logo=star"> <img width="6.5%" src="https://custom-icon-badges.demolab.com/badge/Commit-green.svg?logo=git-commit&logoColor=fff"> 
 </p>
   
+ ### 🖱️ User Activity
+
+![IP Address](https://img.shields.io/badge/Keystroke-blue)
+![Location](https://img.shields.io/badge/Scroll_Metrics-green)
+![Screen Resolution](https://img.shields.io/badge/Touch_Metrics-orange)
+![Connection](https://img.shields.io/badge/Orientation-purple)
+![Sense ID](https://img.shields.io/badge/Keystroke-blue)
+![Media](https://img.shields.io/badge/Scroll_Metrics-green)
+![Call Status](https://img.shields.io/badge/Touch_Metrics-orange)
+![Location IP Address](https://img.shields.io/badge/Orientation-purple)
+![Memory Information](https://img.shields.io/badge/Keystroke-blue)
+![Proximity Sensor Data](https://img.shields.io/badge/Scroll_Metrics-green)
+![System Storage](https://img.shields.io/badge/Touch_Metrics-orange)
+![Battery Informations](https://img.shields.io/badge/Orientation-purple)
+![Device Informations](https://img.shields.io/badge/Scroll_Metrics-green)
 
 <p> Sense is a client side library that enables you to identify users by pinpointing their hardware and software characteristics. This is done by computing a token that stays consistent in spite of any manipulation.</p>
 
